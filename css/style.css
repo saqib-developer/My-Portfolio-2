@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #11071f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: calc(36vh/2.7);
+    min-height: 40px;
+    background: #1A0B2E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 32%;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+
+main {
+    width: 70%;
+}
+
+.intro{
+    display: flex;
+
+}
+
+.img-container {
+    margin-top: 55px;
+    width: 204px;
+    height: 215px;
+    background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    margin-top: 30px;
+    width: 8vw;
+}
+
+.name-arrow {
+    position: relative;
+    margin-top: -98px;
+    left: 96px;
+    bottom: 125px;
+}
+
+.name {
+    bottom: 106px;
+    left: 105px;
+    position: relative;
+    color: #FFFFFF;
+    width: max-content;
+}
+
+.img-discription {
+    color: #FFFFFF;
+    margin-top: 85px;
+}
+
+.oval{
+    display: inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    transform: rotate(350deg);
+    border-radius: 50%;
+    width: 149px;
+    height: 59px;
+}
+
+.para-1{
+    line-height: 33px;
+    color: #FFFFFF;
+    margin: 80px 0;
+}
