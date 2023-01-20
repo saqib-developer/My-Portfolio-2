@@ -111,12 +111,19 @@ main {
 
 .para-2 {
     margin: 40px 0;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.work-details{
     font-size: 40px;
 }
 
 .para-3 {
     margin: 40px 0;
     font-size: 24px;
+    line-height: 32px;
+
 }
 
 .contact {
@@ -129,4 +136,5 @@ main {
 
 .contact p {
     font-size: 15px;
+    line-height: 22px;
 }
