@@ -21,7 +21,7 @@ header {
 
 nav {
     width: 100%;
-    height: calc(50vh/2.7);
+    height: calc(35vh/2.7);
     min-height: 40px;
     background: #1A0B2E;
     display: flex;
@@ -47,10 +47,11 @@ nav ul li a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: small;
+    color: white;
 }
 
 nav img{
-    width: 62px;
+    width: 65px;
     border-radius: 30px;
 }
 
