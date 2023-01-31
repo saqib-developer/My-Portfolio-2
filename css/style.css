@@ -22,7 +22,7 @@ header {
 nav {
     width: 100%;
     height: calc(35vh/2.7);
-    min-height: 40px;
+    min-height: 75px;
     background: #1A0B2E;
     display: flex;
     justify-content: space-around;
@@ -41,16 +41,24 @@ nav ul {
 nav ul li {
     list-style: none;
     padding: 0 10px;
+    transition: all 0.6s;
+}
+
+nav ul li:hover {
+    transform: translateY(-7px);
 }
 
 nav ul li a {
+    height: 1.6em;
+    width: 3em;
+    display: inline-block;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: small;
     color: white;
 }
 
-nav img{
+nav img {
     width: 65px;
     border-radius: 30px;
 }
@@ -61,7 +69,6 @@ main {
 
 .intro {
     display: flex;
-
 }
 
 .img-container {
@@ -83,8 +90,8 @@ main {
 .name-arrow {
     position: relative;
     margin-top: -98px;
-    left: 96px;
-    bottom: 125px;
+    left: 93px;
+    top: -121px;
 }
 
 .name {
@@ -126,10 +133,13 @@ main {
 }
 
 .para-3 {
-    margin: 40px 0;
+    margin: 40px;
     font-size: 24px;
     line-height: 32px;
+}
 
+.experience {
+    display: flex;
 }
 
 .making-pic {
@@ -141,14 +151,14 @@ main {
     flex-direction: column;
 }
 
-.line{
+.line {
     width: 0.5px;
     height: 70px;
     background-color: blue;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.glow-effect{
+.glow-effect {
     width: 288px;
     height: 215px;
     background: radial-gradient(50% 50% at 50% 50%, #763CAC 1%, rgba(50, 15, 133, 0)99%);
@@ -162,29 +172,29 @@ main {
     height: 221px;
 }
 
-#circle-2{
+#circle-2 {
     position: absolute;
     width: 490px;
 }
 
-#circle-3{
+#circle-3 {
     position: absolute;
     width: 350px;
 }
 
-#circle-4{
+#circle-4 {
     position: absolute;
     width: 200px;
     height: 100px;
 }
 
-#circle-5{
+#circle-5 {
     position: absolute;
     width: 200px;
     height: 115px;
 }
 
-.making-pic img{
+.making-pic img {
     position: absolute;
     width: 74px;
     border-radius: 45px;
@@ -201,4 +211,20 @@ main {
 .contact p {
     font-size: 15px;
     line-height: 22px;
+    margin: 10px 0px;
+}
+
+.logos a {
+    margin: 0px 3px;
+}
+
+.logos a img {
+    width: 25px;
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+
+.logos a img:hover {
+    background: rgb(0 0 0 / 25%);
+    transform: translateY(-7px);
 }
