@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #11071f;
     display: flex;
@@ -188,6 +192,55 @@ main {
 
 .experience {
     display: flex;
+}
+
+.project-container {}
+
+.project-container h3 {
+    color: #9857D3;
+    font-size: 14px;
+}
+
+.project h4 {
+    font-size: 40px;
+    color: #CCD6F6;
+}
+
+.pro-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shine {
+    position: absolute;
+    width: 525px;
+    height: 600px;
+    right: 13%;
+    background: radial-gradient(50% 50% at 50% 50%, #fcfcfc45 0%, rgba(50, 15, 133, 0) 100%);
+}
+
+.pro-detail img {
+    width: 382px;
+    border-radius: 22px;
+    position: relative;
+    right: 25px;
+    z-index: -1;
+    box-shadow: -4px -6px 20px 0px #0084ff;
+}
+
+.pro-detail p {
+    width: 504px;
+    height: fit-content;
+    padding: 18px;
+    line-height: 20px;
+    background: #95959575;
+    border-radius: 20px;
+    color: #CCD6F6;
+}
+
+#project-2{
+    
 }
 
 .contact {
