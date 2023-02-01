@@ -192,6 +192,7 @@ main {
 
 .experience {
     display: flex;
+    align-items: center;
 }
 
 .project-container h3 {
@@ -199,9 +200,14 @@ main {
     font-size: 14px;
 }
 
+.project-container a{
+    text-decoration: none;
+}
+
 .project h4 {
     font-size: 40px;
     color: #CCD6F6;
+    margin: 11px 0px;
 }
 
 .pro-detail {
