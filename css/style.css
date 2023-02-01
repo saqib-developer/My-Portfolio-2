@@ -194,8 +194,6 @@ main {
     display: flex;
 }
 
-.project-container {}
-
 .project-container h3 {
     color: #9857D3;
     font-size: 14px;
@@ -217,7 +215,7 @@ main {
     width: 525px;
     height: 600px;
     right: 13%;
-    background: radial-gradient(50% 50% at 50% 50%, #fcfcfc45 0%, rgba(50, 15, 133, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #c699ff26 0%, rgba(50, 15, 133, 0) 100%);
 }
 
 .pro-detail img {
@@ -237,10 +235,6 @@ main {
     background: #95959575;
     border-radius: 20px;
     color: #CCD6F6;
-}
-
-#project-2{
-    
 }
 
 .contact {
