@@ -2,6 +2,7 @@
     .card {
         flex-direction: column;
         padding: 11px;
+        height: fit-content;
     }
 
     .name-arrow {
@@ -15,11 +16,10 @@
     }
 }
 
-
 @media screen and (max-width:580px) {
     nav {
         flex-direction: column;
-        height: 35vh;
+        height: fit-content;
     }
 
     nav ul {
