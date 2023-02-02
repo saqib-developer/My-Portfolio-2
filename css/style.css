@@ -147,7 +147,7 @@ main {
 
 .card {
     width: 50%;
-    height: 138px;
+    height: fit-content;
     background-color: #1e0b3a;
     box-shadow: 1px -5px 12px 0px #6100ff;
     border-radius: 15px;
@@ -175,8 +175,7 @@ main {
     background: #300657;
     border: 1.5px solid #693B93;
     border-radius: 14px;
-    margin-top: 14px;
-    margin-left: 59px;
+    margin: 6px 0px 7px 50px;
 }
 
 .details button a {
@@ -200,7 +199,7 @@ main {
     font-size: 14px;
 }
 
-.project-container a{
+.project-container a {
     text-decoration: none;
 }
 
@@ -214,6 +213,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grp-2 {
+    flex-direction: row-reverse;
 }
 
 .shine {
@@ -234,7 +237,6 @@ main {
 }
 
 .pro-detail p {
-    width: 504px;
     height: fit-content;
     padding: 18px;
     line-height: 20px;

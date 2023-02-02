@@ -1,7 +1,6 @@
 @media screen and (max-width:426px) {
     .card {
         flex-direction: column;
-        height: 228px;
         padding: 11px;
     }
 
@@ -9,6 +8,10 @@
 
         left: 45px;
         top: -95px;
+    }
+
+    .pro-detail img {
+        width: 285px;
     }
 }
 
@@ -19,7 +22,7 @@
         height: 35vh;
     }
 
-    nav ul{
+    nav ul {
         width: 90%;
     }
 
@@ -34,7 +37,9 @@
         right: 20%;
     }
 
-
+    .experience {
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -45,6 +50,10 @@
 
     .card {
         width: 95%;
+    }
+
+    .pro-detail {
+        flex-direction: column-reverse;
     }
 }
 
