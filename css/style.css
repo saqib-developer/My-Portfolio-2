@@ -63,7 +63,6 @@ nav ul li:hover {
 
 nav ul li a {
     height: 1.6em;
-    width: 3em;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: small;
@@ -103,6 +102,11 @@ main {
     margin-top: -98px;
     left: 93px;
     top: -121px;
+}
+
+.head-cover {
+    font-size: 50px;
+    line-height: 1.2;
 }
 
 .name {

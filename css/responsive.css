@@ -5,6 +5,16 @@
         height: fit-content;
     }
 
+    .head-cover {
+        font-size: 38px;
+    }
+
+    .oval {
+        width: 117px;
+        height: 51px;
+        left: 129px;
+    }
+
     .name-arrow {
 
         left: 45px;
@@ -50,6 +60,12 @@
 
     .card {
         width: 95%;
+    }
+
+    .project h4{
+        text-align: center;
+        line-height: 43px;
+        margin-bottom: 20px;
     }
 
     .pro-detail {
