@@ -26,6 +26,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* end */
 
 header {
@@ -65,7 +69,7 @@ nav ul li a {
     height: 1.6em;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    font-size: small;
+    font-size: 16px;
 }
 
 nav img {
@@ -158,13 +162,18 @@ main {
 
 .card {
     width: 50%;
-    height: fit-content;
+    height: calc(18em/2);
     background-color: #1e0b3a;
     box-shadow: 1px -5px 12px 0px #6100ff;
     border-radius: 15px;
     margin: 19px;
     display: flex;
     align-items: center;
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
@@ -210,10 +219,25 @@ main {
     align-items: center;
 }
 
+.project {
+    transition: all 0.7s;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    background-color: #73737314;
+    border-radius: 15px;
+}
+
 .project-container h3 {
     color: #9857D3;
     font-size: 14px;
 }
+
+.project-container a:hover {
+    text-decoration: none;
+}
+
 
 .project h4 {
     font-size: 40px;
@@ -238,6 +262,11 @@ main {
     right: 13%;
     background: radial-gradient(50% 50% at 50% 50%, #c699ff26 0%, rgba(50, 15, 133, 0) 100%);
 }
+
+.fiverr-link {
+    color: #00b22d;
+}
+
 
 .pro-detail img {
     width: 382px;
