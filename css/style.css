@@ -175,7 +175,7 @@ main {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 1px -5px 12px 2px #6100ff;
+    box-shadow: 1px -5px 12px 2.5px #6100ff;
 }
 
 .card img {
