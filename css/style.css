@@ -170,11 +170,12 @@ main {
     margin: 19px;
     display: flex;
     align-items: center;
-    transition: transform 1s;
+    transition: all 1s;
 }
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 1px -5px 12px 2px #6100ff;
 }
 
 .card img {
