@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 function App() {
 
@@ -7,6 +7,121 @@ function App() {
     let elem = document.getElementById(id);
     elem.scrollIntoView({ behavior: 'smooth' });
   }
+
+  //pro-1
+  const elements = [
+    {
+      id: "pro-1",
+      ref: useRef(null),
+      initialTransform: "translateX(-41vw)",
+      visibleTransform: "translateX(0vw)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "pro-2",
+      ref: useRef(null),
+      initialTransform: "translateX(41vw)",
+      visibleTransform: "translateX(0vw)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "pro-3",
+      ref: useRef(null),
+      initialTransform: "translateX(-41vw)",
+      visibleTransform: "translateX(0vw)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "pro-3",
+      ref: useRef(null),
+      initialTransform: "translateX(41vw)",
+      visibleTransform: "translateX(0vw)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "card-0",
+      ref: useRef(null),
+      initialTransform: "translateX(-30vw)",
+      visibleTransform: "translateX(0vw)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "card-1",
+      ref: useRef(null),
+      initialTransform: "translateX(30vw)",
+      visibleTransform: "translateX(0vw)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "card-2",
+      ref: useRef(null),
+      initialTransform: "translateX(50%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "card-3",
+      ref: useRef(null),
+      initialTransform: "translateX(-50%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+  ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const { target } = entry;
+          const { initialTransform, visibleTransform, initialOpacity, visibleOpacity } =
+            elements.find((e) => e.ref.current === target);
+
+          if (entry.isIntersecting) {
+            target.style.transform = visibleTransform;
+            target.style.opacity = visibleOpacity;
+          } else {
+            target.style.transform = initialTransform;
+            target.style.opacity = initialOpacity;
+          }
+        });
+      },
+      {
+        rootMargin: "0px",
+        threshold: elements.map((e) => e.threshold),
+      }
+    );
+
+    elements.forEach((element) => {
+      if (element.ref.current) {
+        observer.observe(element.ref.current);
+      }
+    });
+
+    return () => {
+      elements.forEach((element) => {
+        if (element.ref.current) {
+          observer.unobserve(element.ref.current);
+        }
+      });
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
@@ -60,7 +175,7 @@ function App() {
 
         <div className="work-details">Work Experience</div>
         <div className="up">
-          <div className="card">
+          <div key={elements[4].id} id={elements[4].id} ref={elements[4].ref} className="card">
             <img src="img/icons/Html logo.png" alt="" />
             <div className="details">
               <h3>HTML5:</h3>
@@ -71,7 +186,7 @@ function App() {
             </div>
           </div>
 
-          <div className="card">
+          <div key={elements[5].id} id={elements[5].id} ref={elements[5].ref} className="card">
             <img src="img/icons/Css logo.png" alt="" />
             <div className="details">
               <h3>CSS3:</h3>
@@ -82,7 +197,7 @@ function App() {
           </div>
         </div>
         <div className="dow">
-          <div className="card">
+          <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className="card">
             <img src="img/icons/javascript logo.png" alt="" />
             <div className="details">
               <h3>JAVASCRIPT:</h3>
@@ -92,7 +207,7 @@ function App() {
             </div>
           </div>
 
-          <div className="card">
+          <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="card">
             <img src="img/icons/react logo.png" alt="" />
             <div className="details">
               <h3>REACT:</h3>
@@ -114,7 +229,7 @@ function App() {
         <div className="project-container" id="project-container">
           <h3>Featured Projects</h3>
           <a target="_blank" rel="noreferrer" href="https://msntictactoe.netlify.app/">
-            <div id='pro-1' className="project">
+            <div key={elements[0].id} id={elements[0].id} ref={elements[0].ref} className='project'>
               <h4>TicTacToe</h4>
               <div className="pro-detail">
                 <p>Just a simple game that I really was inspired as a kid. Other than making it fully functional
@@ -126,7 +241,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Clock/">
-            <div className="project">
+            <div key={elements[1].id} id={elements[1].id} ref={elements[1].ref} className="project">
               <h4>Clock</h4>
               <div className="pro-detail grp-2">
                 <p>An analogue clock that shows current time. It can also be converted to digital clock.</p>
@@ -136,7 +251,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Quadratic-Equations/">
-            <div className="project">
+            <div key={elements[2].id} id={elements[2].id} ref={elements[2].ref} className="project">
               <h4>Quadartic Equation</h4>
               <div className="pro-detail">
                 <p>This was my dream to make an Quadartic Calculator so I gave it a try. It is not full ready
@@ -147,7 +262,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://mtouseef-portfolio.netlify.app/">
-            <div className="project">
+            <div key={elements[3].id} id={elements[3].id} ref={elements[3].ref} className="project">
               <h4>Friend Portfolio</h4>
               <div className="pro-detail grp-2">
                 <p>My friend who is a Game Developer asked me to make a Portfolio of his own to showcase his
