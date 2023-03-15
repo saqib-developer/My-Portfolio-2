@@ -262,7 +262,7 @@ main {
     margin: 19px;
     display: flex;
     align-items: center;
-    transition: all 1s, transform 2.5s;
+    transition: all 1s, transform 2.5s, opacity 2.5s;
 }
 
 .card:hover {
@@ -314,7 +314,7 @@ main {
 }
 
 .project {
-    transition: all 0.7s, transform 2.5s;
+    transition: all 0.7s, transform 2.5s, opacity 2.5s;
 }
 
 .project:hover {
