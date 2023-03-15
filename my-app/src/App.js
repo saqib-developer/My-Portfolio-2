@@ -156,7 +156,7 @@ function App() {
             <span style={{ textDecorationLine: 'underline', fontSize: '17px' }}>A Developer who</span><br />
 
             <span className="head-cover">Judges a book <br />
-              by its<span style={{ color: '#7127BA' }}>
+              by its <span style={{ color: '#7127BA' }}>
                 <div className="oval"></div>cover
               </span>...</span><br />
             <span style={{ fontSize: '14px' }}>Because if the cover does not impress you what else can?</span>
