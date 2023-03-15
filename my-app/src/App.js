@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 function App() {
 
@@ -123,6 +123,21 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const text = `I'm a Web Developer.`;
+  const typingSpeed = 80;
+  const [displayText, setDisplayText] = useState('');
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const intervalId = setInterval(() => {
+      setDisplayText(text.substring(0, currentIndex));
+      currentIndex++;
+      if (currentIndex > text.length) {
+        clearInterval(intervalId);
+      }
+    }, typingSpeed);
+  }, [text, typingSpeed]);
+
   return (
     <>
       <header>
@@ -164,8 +179,8 @@ function App() {
         </div>
 
         <div className="para-1">
-          <p><span style={{ fontSize: '50px', lineHeight: '46px' }}>I'm a Web Developer.</span><br />Currently, I'm working at
-            <a href="https://www.fiverr.com/share/pAR6Eo" target="_blank" rel="noreferrer" style={{ color: '#00b22d' }}>Fiverr</a>,
+          <p><span style={{ fontSize: '50px', lineHeight: '46px' }}>{displayText}</span><br />Currently, I'm working at
+            <a href="https://www.fiverr.com/share/pAR6Eo" target="_blank" rel="noreferrer" style={{ color: '#00b22d' }}> Fiverr</a>,
           </p>
         </div>
 
