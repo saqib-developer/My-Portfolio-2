@@ -13,8 +13,8 @@ function App() {
     {
       id: "pro-1",
       ref: useRef(null),
-      initialTransform: "translateX(-41vw)",
-      visibleTransform: "translateX(0vw)",
+      initialTransform: "translateX(-75%)",
+      visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
       threshold: 0.3,
@@ -22,8 +22,8 @@ function App() {
     {
       id: "pro-2",
       ref: useRef(null),
-      initialTransform: "translateX(41vw)",
-      visibleTransform: "translateX(0vw)",
+      initialTransform: "translateX(75%))",
+      visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
       threshold: 0.3,
@@ -31,8 +31,8 @@ function App() {
     {
       id: "pro-3",
       ref: useRef(null),
-      initialTransform: "translateX(-41vw)",
-      visibleTransform: "translateX(0vw)",
+      initialTransform: "translateX(-75%))",
+      visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
       threshold: 0.3,
@@ -40,8 +40,8 @@ function App() {
     {
       id: "pro-3",
       ref: useRef(null),
-      initialTransform: "translateX(41vw)",
-      visibleTransform: "translateX(0vw)",
+      initialTransform: "translateX(75%))",
+      visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
       threshold: 0.3,
@@ -49,8 +49,8 @@ function App() {
     {
       id: "card-0",
       ref: useRef(null),
-      initialTransform: "translateX(-30vw)",
-      visibleTransform: "translateX(0vw)",
+      initialTransform: "translateX(-50%)",
+      visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
       threshold: 0.3,
@@ -58,8 +58,8 @@ function App() {
     {
       id: "card-1",
       ref: useRef(null),
-      initialTransform: "translateX(30vw)",
-      visibleTransform: "translateX(0vw)",
+      initialTransform: "translateX(50%)",
+      visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
       threshold: 0.3,
@@ -120,7 +120,7 @@ function App() {
         }
       });
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
