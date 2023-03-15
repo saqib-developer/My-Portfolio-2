@@ -13,7 +13,7 @@ function App() {
     {
       id: "pro-1",
       ref: useRef(null),
-      initialTransform: "translateX(-75%)",
+      initialTransform: "translateX(-70%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -22,7 +22,7 @@ function App() {
     {
       id: "pro-2",
       ref: useRef(null),
-      initialTransform: "translateX(75%)",
+      initialTransform: "translateX(70%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -31,7 +31,7 @@ function App() {
     {
       id: "pro-3",
       ref: useRef(null),
-      initialTransform: "translateX(-75%)",
+      initialTransform: "translateX(-70%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -40,7 +40,7 @@ function App() {
     {
       id: "pro-3",
       ref: useRef(null),
-      initialTransform: "translateX(75%)",
+      initialTransform: "translateX(70%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -49,7 +49,7 @@ function App() {
     {
       id: "card-0",
       ref: useRef(null),
-      initialTransform: "translateX(-50%)",
+      initialTransform: "translateX(-60%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -58,7 +58,7 @@ function App() {
     {
       id: "card-1",
       ref: useRef(null),
-      initialTransform: "translateX(50%)",
+      initialTransform: "translateX(60%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -67,7 +67,7 @@ function App() {
     {
       id: "card-2",
       ref: useRef(null),
-      initialTransform: "translateX(50%)",
+      initialTransform: "translateX(60%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -76,7 +76,7 @@ function App() {
     {
       id: "card-3",
       ref: useRef(null),
-      initialTransform: "translateX(-50%)",
+      initialTransform: "translateX(-60%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
