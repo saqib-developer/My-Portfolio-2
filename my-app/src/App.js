@@ -22,7 +22,7 @@ function App() {
     {
       id: "pro-2",
       ref: useRef(null),
-      initialTransform: "translateX(75%))",
+      initialTransform: "translateX(75%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -31,7 +31,7 @@ function App() {
     {
       id: "pro-3",
       ref: useRef(null),
-      initialTransform: "translateX(-75%))",
+      initialTransform: "translateX(-75%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -40,7 +40,7 @@ function App() {
     {
       id: "pro-3",
       ref: useRef(null),
-      initialTransform: "translateX(75%))",
+      initialTransform: "translateX(75%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
