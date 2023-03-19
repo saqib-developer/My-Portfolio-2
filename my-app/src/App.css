@@ -325,7 +325,7 @@ main {
 
 .project-container h3 {
     color: #9857D3;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .project-container a:hover {
@@ -395,7 +395,7 @@ main {
 }
 
 .logos a {
-    margin: 0px 3px;
+    margin: 0px 7px;
 }
 
 .logos a img {
