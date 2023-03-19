@@ -123,9 +123,10 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const text = `I'm a Web Developer.`;
-  const typingSpeed = 80;
+  const text = `Hello! I am `;
+  const typingSpeed = 70;
   const [displayText, setDisplayText] = useState('');
+  const [go, setGo] = useState(false)
 
   useEffect(() => {
     let currentIndex = 0;
@@ -134,9 +135,44 @@ function App() {
       currentIndex++;
       if (currentIndex > text.length) {
         clearInterval(intervalId);
+        setGo(true);
       }
     }, typingSpeed);
   }, [text, typingSpeed]);
+
+  const text2 = `Saqib`;
+  const [displayText2, setDisplayText2] = useState('');
+
+  useEffect(() => {
+    if (go) {
+      let currentIndex = 0;
+      const intervalId = setInterval(() => {
+        setDisplayText2(text2.substring(0, currentIndex));
+        currentIndex++;
+        if (currentIndex > text2.length) {
+          clearInterval(intervalId);
+          setGo2(true)
+        }
+      }, typingSpeed);
+    }
+  }, [go, text2, typingSpeed]);
+
+  const text3 = `I'm a Web Developer.`;
+  const [displayText3, setDisplayText3] = useState('');
+  const [go2, setGo2] = useState(false)
+
+  useEffect(() => {
+    if (go2) {
+      let currentIndex = 0;
+      const intervalId = setInterval(() => {
+        setDisplayText3(text3.substring(0, currentIndex));
+        currentIndex++;
+        if (currentIndex > text3.length) {
+          clearInterval(intervalId);
+        }
+      }, typingSpeed);
+    }
+  }, [go2, text3, typingSpeed]);
 
   return (
     <>
@@ -163,7 +199,7 @@ function App() {
                   fill="white" />
               </svg>
               <div className="name">
-                <span>Hello! I am </span><span style={{ color: '#7127BA' }}>Saqib</span>
+                <span>{displayText}</span><span style={{ color: '#7127BA' }}>{displayText2}</span>
               </div>
             </div>
           </div>
@@ -179,7 +215,7 @@ function App() {
         </div>
 
         <div className="para-1">
-          <p><span style={{ fontSize: '50px', lineHeight: '46px' }}>{displayText}</span><br />Currently, I'm working at
+          <p><span style={{ fontSize: '50px', lineHeight: '46px' }}>{displayText3}</span><br />Currently, I'm working at
             <a href="https://www.fiverr.com/share/pAR6Eo" target="_blank" rel="noreferrer" style={{ color: '#00b22d' }}> Fiverr</a>,
           </p>
         </div>
