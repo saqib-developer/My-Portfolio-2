@@ -11,43 +11,7 @@ function App() {
   //pro-1
   const elements = [
     {
-      id: "pro-1",
-      ref: useRef(null),
-      initialTransform: "translateX(-70%)",
-      visibleTransform: "translateX(0%)",
-      initialOpacity: "0",
-      visibleOpacity: "1",
-      threshold: 0.3,
-    },
-    {
-      id: "pro-2",
-      ref: useRef(null),
-      initialTransform: "translateX(70%)",
-      visibleTransform: "translateX(0%)",
-      initialOpacity: "0",
-      visibleOpacity: "1",
-      threshold: 0.3,
-    },
-    {
-      id: "pro-3",
-      ref: useRef(null),
-      initialTransform: "translateX(-70%)",
-      visibleTransform: "translateX(0%)",
-      initialOpacity: "0",
-      visibleOpacity: "1",
-      threshold: 0.3,
-    },
-    {
-      id: "pro-3",
-      ref: useRef(null),
-      initialTransform: "translateX(70%)",
-      visibleTransform: "translateX(0%)",
-      initialOpacity: "0",
-      visibleOpacity: "1",
-      threshold: 0.3,
-    },
-    {
-      id: "card-0",
+      id: "html-card",
       ref: useRef(null),
       initialTransform: "translateX(-60%)",
       visibleTransform: "translateX(0%)",
@@ -56,7 +20,7 @@ function App() {
       threshold: 0.3,
     },
     {
-      id: "card-1",
+      id: "css-card",
       ref: useRef(null),
       initialTransform: "translateX(60%)",
       visibleTransform: "translateX(0%)",
@@ -65,7 +29,7 @@ function App() {
       threshold: 0.3,
     },
     {
-      id: "card-2",
+      id: "js-card",
       ref: useRef(null),
       initialTransform: "translateX(60%)",
       visibleTransform: "translateX(0%)",
@@ -74,7 +38,52 @@ function App() {
       threshold: 0.3,
     },
     {
-      id: "card-3",
+      id: "react-card",
+      ref: useRef(null),
+      initialTransform: "translateX(-60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "tictactoe",
+      ref: useRef(null),
+      initialTransform: "translateX(-60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "clock",
+      ref: useRef(null),
+      initialTransform: "translateX(60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "quadratic-equ",
+      ref: useRef(null),
+      initialTransform: "translateX(-60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "friend-port",
+      ref: useRef(null),
+      initialTransform: "translateX(60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "amazon",
       ref: useRef(null),
       initialTransform: "translateX(-60%)",
       visibleTransform: "translateX(0%)",
@@ -84,44 +93,55 @@ function App() {
     },
   ];
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  window.addEventListener('resize', () => { setWindowWidth(window.innerWidth) })
+
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const { target } = entry;
-          const { initialTransform, visibleTransform, initialOpacity, visibleOpacity } =
-            elements.find((e) => e.ref.current === target);
+    if (windowWidth > 475) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const { target } = entry;
+            const { initialTransform, visibleTransform, initialOpacity, visibleOpacity } =
+              elements.find((e) => e.ref.current === target);
 
-          if (entry.isIntersecting) {
-            target.style.transform = visibleTransform;
-            target.style.opacity = visibleOpacity;
-          } else {
-            target.style.transform = initialTransform;
-            target.style.opacity = initialOpacity;
-          }
-        });
-      },
-      {
-        rootMargin: "0px",
-        threshold: elements.map((e) => e.threshold),
-      }
-    );
+            if (entry.isIntersecting) {
+              target.style.transform = visibleTransform;
+              target.style.opacity = visibleOpacity;
+            } else {
+              target.style.transform = initialTransform;
+              target.style.opacity = initialOpacity;
+            }
+          });
+        },
+        {
+          rootMargin: "0px",
+          threshold: elements.map((e) => e.threshold),
+        }
+      );
 
-    elements.forEach((element) => {
-      if (element.ref.current) {
-        observer.observe(element.ref.current);
-      }
-    });
-
-    return () => {
       elements.forEach((element) => {
         if (element.ref.current) {
-          observer.unobserve(element.ref.current);
+          observer.observe(element.ref.current);
         }
       });
-    };
+
+      return () => {
+        elements.forEach((element) => {
+          if (element.ref.current) {
+            observer.unobserve(element.ref.current);
+          }
+        });
+      };
+    } else {
+      elements.forEach(element => {
+        console.log(document.getElementById(element.id).style.transform)
+        document.getElementById(element.id).style.transform = 'translateX(0%)';
+        document.getElementById(element.id).style.opacity = 1;
+      });
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [windowWidth]);
 
   const text = `Hello! I am `;
   const typingSpeed = 70;
@@ -226,7 +246,7 @@ function App() {
 
         <div className="work-details">Work Experience</div>
         <div className="up">
-          <div key={elements[4].id} id={elements[4].id} ref={elements[4].ref} className="card">
+          <div key={elements[0].id} id={elements[0].id} ref={elements[0].ref} className="card">
             <img src="img/icons/Html logo.png" alt="" />
             <div className="details">
               <h3>HTML5:</h3>
@@ -237,7 +257,7 @@ function App() {
             </div>
           </div>
 
-          <div key={elements[5].id} id={elements[5].id} ref={elements[5].ref} className="card">
+          <div key={elements[1].id} id={elements[1].id} ref={elements[1].ref} className="card">
             <img src="img/icons/Css logo.png" alt="" />
             <div className="details">
               <h3>CSS3:</h3>
@@ -248,7 +268,7 @@ function App() {
           </div>
         </div>
         <div className="dow">
-          <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className="card">
+          <div key={elements[2].id} id={elements[2].id} ref={elements[2].ref} className="card">
             <img src="img/icons/javascript logo.png" alt="" />
             <div className="details">
               <h3>JAVASCRIPT:</h3>
@@ -258,7 +278,7 @@ function App() {
             </div>
           </div>
 
-          <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="card">
+          <div key={elements[3].id} id={elements[3].id} ref={elements[3].ref} className="card">
             <img src="img/icons/react logo.png" alt="" />
             <div className="details">
               <h3>REACT:</h3>
@@ -279,8 +299,19 @@ function App() {
 
         <div className="project-container" id="project-container">
           <h3>Featured Projects</h3>
+
+          <a target="_blank" rel="noreferrer" href="https://amazon-clone.netlify.app/">
+            <div key={elements[8].id} id={elements[8].id} ref={elements[8].ref} className="project">
+              <h4>Amazon Clone</h4>
+              <div className="pro-detail grp-2">
+                <p>An Amazon Clone made with all of the function of the original website incuding database</p>
+                <img style={{ right: '-15px', boxShadow: '4px -6px 20px 0px #0084ff' }} src="img/Amazon-clone.png" alt="" />
+              </div>
+            </div>
+          </a>
+
           <a target="_blank" rel="noreferrer" href="https://msntictactoe.netlify.app/">
-            <div key={elements[0].id} id={elements[0].id} ref={elements[0].ref} className='project'>
+            <div key={elements[4].id} id={elements[4].id} ref={elements[4].ref} className='project'>
               <h4>TicTacToe</h4>
               <div className="pro-detail">
                 <p>Just a simple game that I really was inspired as a kid. Other than making it fully functional
@@ -292,7 +323,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Clock/">
-            <div key={elements[1].id} id={elements[1].id} ref={elements[1].ref} className="project">
+            <div key={elements[5].id} id={elements[5].id} ref={elements[5].ref} className="project">
               <h4>Clock</h4>
               <div className="pro-detail grp-2">
                 <p>An analogue clock that shows current time. It can also be converted to digital clock.</p>
@@ -302,7 +333,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Quadratic-Equations/">
-            <div key={elements[2].id} id={elements[2].id} ref={elements[2].ref} className="project">
+            <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className="project">
               <h4>Quadartic Equation</h4>
               <div className="pro-detail">
                 <p>This was my dream to make an Quadartic Calculator so I gave it a try. It is not full ready
@@ -313,7 +344,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://mtouseef-portfolio.netlify.app/">
-            <div key={elements[3].id} id={elements[3].id} ref={elements[3].ref} className="project">
+            <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="project">
               <h4>Friend Portfolio</h4>
               <div className="pro-detail grp-2">
                 <p>My friend who is a Game Developer asked me to make a Portfolio of his own to showcase his

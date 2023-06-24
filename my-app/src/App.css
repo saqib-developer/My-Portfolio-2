@@ -144,12 +144,12 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     width: 32%;
-
+    margin: 8px 0;
 }
 
 nav ul li {
     list-style: none;
-    padding: 0 10px;
+    padding: 0 25px;
     transition: all 0.6s;
 }
 
@@ -257,7 +257,7 @@ main {
     width: 50%;
     height: calc(18em/2);
     background-color: #1e0b3a;
-    box-shadow: 1px -5px 12px 0px #6100ff;
+    box-shadow: 0px 0px 9px 0px #6100ff;
     border-radius: 15px;
     margin: 19px;
     display: flex;
@@ -266,8 +266,7 @@ main {
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 1px -5px 12px 2.5px #6100ff;
+    box-shadow: 0px 0px 9px 3px #6100ff;
 }
 
 .card img {
@@ -315,6 +314,8 @@ main {
 
 .project {
     transition: all 0.7s, transform 2s, opacity 2.5s;
+    padding: 3px 10px 21px 10px;
+    margin: 10px 0px;
 }
 
 .project:hover {
@@ -336,7 +337,7 @@ main {
 .project h4 {
     font-size: 40px;
     color: #CCD6F6;
-    margin: 16px 0px 5px 8px;
+    margin: 0px 0px 13px 15px;
 }
 
 .pro-detail {
