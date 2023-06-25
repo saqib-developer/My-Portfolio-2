@@ -47,25 +47,7 @@ function App() {
       threshold: 0.3,
     },
     {
-      id: "tictactoe",
-      ref: useRef(null),
-      initialTransform: "translateX(-60%)",
-      visibleTransform: "translateX(0%)",
-      initialOpacity: "0",
-      visibleOpacity: "1",
-      threshold: 0.3,
-    },
-    {
-      id: "clock",
-      ref: useRef(null),
-      initialTransform: "translateX(60%)",
-      visibleTransform: "translateX(0%)",
-      initialOpacity: "0",
-      visibleOpacity: "1",
-      threshold: 0.3,
-    },
-    {
-      id: "quadratic-equ",
+      id: "amazon",
       ref: useRef(null),
       initialTransform: "translateX(-60%)",
       visibleTransform: "translateX(0%)",
@@ -83,9 +65,18 @@ function App() {
       threshold: 0.3,
     },
     {
-      id: "amazon",
+      id: "tictactoe",
       ref: useRef(null),
       initialTransform: "translateX(-60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "clock",
+      ref: useRef(null),
+      initialTransform: "translateX(60%)",
       visibleTransform: "translateX(0%)",
       initialOpacity: "0",
       visibleOpacity: "1",
@@ -135,7 +126,7 @@ function App() {
       };
     } else {
       elements.forEach(element => {
-        console.log(document.getElementById(element.id).style.transform)
+        console.log(element.id)
         document.getElementById(element.id).style.transform = 'translateX(0%)';
         document.getElementById(element.id).style.opacity = 1;
       });
@@ -292,7 +283,7 @@ function App() {
           <h3>Featured Projects</h3>
 
           <a target="_blank" rel="noreferrer" href="https://amazon-clone-saqib.netlify.app/">
-            <div key={elements[8].id} id={elements[8].id} ref={elements[8].ref} className="project">
+            <div key={elements[4].id} id={elements[4].id} ref={elements[4].ref} className="project">
               <h4>Amazon Clone</h4>
               <div className="pro-detail">
                 <p>I have developed a feature-rich Amazon clone website that incorporates essential functionalities such as a seamless cart option, ad posting capabilities, and user account management using Firebase's robust database and authentication services.</p>
@@ -302,7 +293,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://mtouseef-portfolio.netlify.app/">
-            <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="project">
+            <div key={elements[5].id} id={elements[5].id} ref={elements[5].ref} className="project">
               <h4>Friend Portfolio</h4>
               <div className="pro-detail">
                 <p>I have designed a captivating portfolio showcasing my friend's expertise as a game developer. The portfolio includes a Firebase-integrated database, allowing him to effortlessly upload and showcase his impressive projects to demonstrate his skills and creativity in the gaming industry.</p>
@@ -313,7 +304,7 @@ function App() {
           <h3>Others Projects</h3>
 
           <a target="_blank" rel="noreferrer" href="https://msntictactoe.netlify.app/">
-            <div key={elements[4].id} id={elements[4].id} ref={elements[4].ref} className='project'>
+            <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className='project'>
               <h4>Tic Tac Toe</h4>
               <div className="pro-detail">
                 <p>I have crafted a dynamic Tic Tac Toe game that provides an engaging experience for two players. With its intuitive interface and smooth gameplay, this project showcases my ability to design and develop interactive games that entertain and challenge players.</p>
@@ -323,7 +314,7 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Clock/">
-            <div key={elements[5].id} id={elements[5].id} ref={elements[5].ref} className="project">
+            <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="project">
               <h4>Clock</h4>
               <div className="pro-detail">
                 <p>I have crafted a visually stunning analogue clock that elegantly displays the current time. Experience the timeless charm of a traditional clock with this captivating and functional design.</p>
