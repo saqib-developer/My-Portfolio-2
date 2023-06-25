@@ -198,7 +198,7 @@ function App() {
     <>
       <header>
         <nav>
-          <a href='/' onClick={(event) => { event.preventDefault(); }}><img src="img/IMG-20220530-WA0134_2.jpg" alt="logo" /></a>
+          <a href='/' onClick={(event) => { event.preventDefault(); }}><img src="img\Screenshot_20230503-190452.jpg" alt="logo" /></a>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href='/' onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Projects</a></li>
@@ -240,9 +240,7 @@ function App() {
           </p>
         </div>
 
-        <div className="para-2">I specialize in creating custom websites using HTML, CSS, and JavaScript. My process
-          involves working closely with you to understand your business, brand, and goals, and creating a website that
-          not only looks great but is also functional, user-friendly and responsive.</div>
+        <div className="para-2">I specialize in creating custom websites using HTML, CSS, and JavaScript. With a meticulous approach, I work closely with clients to understand their unique businesses, brand, and goals. By combining your vision with my technical expertise, I can create websites that not only have visually stunning designs but are also functional, user-friendly, and responsive across all devices. My goal is to deliver an exceptional online presence that engages your target audience and helps you achieve your digital objectives.</div>
 
         <div className="work-details">Work Experience</div>
         <div className="up">
@@ -250,9 +248,7 @@ function App() {
             <img src="img/icons/Html logo.png" alt="" />
             <div className="details">
               <h3>HTML5:</h3>
-              <p>I have solid understanding about HTML. I
-                have created many projects using it some are mentioned <a href='/'
-                  onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Here</a>.</p>
+              <p>Proficient in creating the structure and layout of web pages using HTML, ensuring proper content hierarchy and semantic markup for enhanced accessibility and search engine optimization.</p>
               <button><a target="_blank" rel="noreferrer" href="https://html.com/">Learn More</a></button>
             </div>
           </div>
@@ -261,9 +257,8 @@ function App() {
             <img src="img/icons/Css logo.png" alt="" />
             <div className="details">
               <h3>CSS3:</h3>
-              <p>I have a great understanding of CSS, and am able to effectively style my HTML pages. Some
-                projects that use it are mentioned <a href='/' onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Here</a>.</p>
-              <button><a target="_blank" rel="noreferrer" href="https://web.dev/">Learn More</a></button>
+              <p>Skilled in applying CSS styles and design principles to create visually appealing and responsive websites, leveraging selectors, flexbox, grid, and animations for a captivating user experience.</p>
+              <button><a target="_blank" rel="noreferrer" href="https://web.dev/learn/css/">Learn More</a></button>
             </div>
           </div>
         </div>
@@ -272,8 +267,7 @@ function App() {
             <img src="img/icons/javascript logo.png" alt="" />
             <div className="details">
               <h3>JAVASCRIPT:</h3>
-              <p>I have recently learned it but am able to develop dynamic and interactive web applications.
-                Projects using it are mentioned <a href='/' onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Here</a>.</p>
+              <p>Experienced in JavaScript, enabling dynamic and interactive web functionality, including event handling, DOM manipulation, AJAX, and utilizing libraries and frameworks for efficient development.</p>
               <button><a target="_blank" rel="noreferrer" href="https://www.javascript.com/">Learn More</a></button>
             </div>
           </div>
@@ -282,41 +276,47 @@ function App() {
             <img src="img/icons/react logo.png" alt="" />
             <div className="details">
               <h3>REACT:</h3>
-              <p>I have just learned React and can create functional based Components with no problem. Some
-                projects that use it are mentioned <a href='/' onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Here</a>.</p>
+              <p>Experienced in JavaScript, enabling dynamic and interactive web functionality, including event handling, DOM manipulation, AJAX, and utilizing libraries and frameworks for efficient development.</p>
               <button><a target="_blank" rel="noreferrer" href="https://reactjs.org/">Learn More</a></button>
             </div>
           </div>
         </div>
         <div className="experience">
           <div className="para-3">
-            I'm currently working on <a href="https://www.fiverr.com/share/pAR6Eo" target="_blank" rel="noreferrer"
-              style={{ color: '#00b22d' }}>Fiverr</a>. I have created many projects of my own and some projects for my
-            firends.
-            Some are mentioned <a href='/' onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Here</a>.
+            I have successfully completed numerous projects, including personal endeavors and collaborations with clients on <a href="https://www.fiverr.com/share/pAR6Eo" target="_blank" rel="noreferrer"
+              style={{ color: '#00b22d' }}>Fiverr</a>. I take pride in my work, and you can explore a selection of these projects <a href='/' onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Here</a>.
           </div>
         </div>
 
         <div className="project-container" id="project-container">
           <h3>Featured Projects</h3>
 
-          <a target="_blank" rel="noreferrer" href="https://amazon-clone.netlify.app/">
+          <a target="_blank" rel="noreferrer" href="https://amazon-clone-saqib.netlify.app/">
             <div key={elements[8].id} id={elements[8].id} ref={elements[8].ref} className="project">
               <h4>Amazon Clone</h4>
-              <div className="pro-detail grp-2">
-                <p>An Amazon Clone made with all of the function of the original website incuding database</p>
-                <img style={{ right: '-15px', boxShadow: '4px -6px 20px 0px #0084ff' }} src="img/Amazon-clone.png" alt="" />
+              <div className="pro-detail">
+                <p>I have developed a feature-rich Amazon clone website that incorporates essential functionalities such as a seamless cart option, ad posting capabilities, and user account management using Firebase's robust database and authentication services.</p>
+                <img style={{boxShadow: '-6px -10px 18px 0px #a7a7a7'}} src="img/Amazon-clone.png" alt="" />
               </div>
             </div>
           </a>
 
+          <a target="_blank" rel="noreferrer" href="https://mtouseef-portfolio.netlify.app/">
+            <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="project">
+              <h4>Friend Portfolio</h4>
+              <div className="pro-detail">
+                <p>I have designed a captivating portfolio showcasing my friend's expertise as a game developer. The portfolio includes a Firebase-integrated database, allowing him to effortlessly upload and showcase his impressive projects to demonstrate his skills and creativity in the gaming industry.</p>
+                <img  style={{boxShadow: '-6px -10px 18px 0px #9400c6'}} src="img/Friend-project.png" alt="" />
+              </div>
+            </div>
+          </a>
+          <h3>Others Projects</h3>
+
           <a target="_blank" rel="noreferrer" href="https://msntictactoe.netlify.app/">
             <div key={elements[4].id} id={elements[4].id} ref={elements[4].ref} className='project'>
-              <h4>TicTacToe</h4>
+              <h4>Tic Tac Toe</h4>
               <div className="pro-detail">
-                <p>Just a simple game that I really was inspired as a kid. Other than making it fully functional
-                  i
-                  really paid attention to the look of it. Have a try.</p>
+                <p>I have crafted a dynamic Tic Tac Toe game that provides an engaging experience for two players. With its intuitive interface and smooth gameplay, this project showcases my ability to design and develop interactive games that entertain and challenge players.</p>
                 <img src="img/TicTacToe pic.png" alt="" />
               </div>
             </div>
@@ -325,13 +325,13 @@ function App() {
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Clock/">
             <div key={elements[5].id} id={elements[5].id} ref={elements[5].ref} className="project">
               <h4>Clock</h4>
-              <div className="pro-detail grp-2">
-                <p>An analogue clock that shows current time. It can also be converted to digital clock.</p>
-                <img style={{ right: '-15px', boxShadow: '4px -6px 20px 0px #0084ff' }} src="img/Clock.png" alt="" />
+              <div className="pro-detail">
+                <p>I have crafted a visually stunning analogue clock that elegantly displays the current time. Experience the timeless charm of a traditional clock with this captivating and functional design.</p>
+                <img src="img/Clock.png" alt="" />
               </div>
             </div>
           </a>
-
+          {/* 
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Quadratic-Equations/">
             <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className="project">
               <h4>Quadartic Equation</h4>
@@ -341,19 +341,7 @@ function App() {
                 <img src="img/Quadratic Equ.png" alt="" />
               </div>
             </div>
-          </a>
-
-          <a target="_blank" rel="noreferrer" href="https://mtouseef-portfolio.netlify.app/">
-            <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="project">
-              <h4>Friend Portfolio</h4>
-              <div className="pro-detail grp-2">
-                <p>My friend who is a Game Developer asked me to make a Portfolio of his own to showcase his
-                  projects and skills.</p>
-                <img style={{ right: '-15px', boxShadow: '4px -6px 20px 0px #9e00ff' }} src="img/Friend-project.png"
-                  alt="" />
-              </div>
-            </div>
-          </a>
+          </a> */}
 
         </div>
 
