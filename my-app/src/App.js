@@ -189,7 +189,7 @@ function App() {
     <>
       <header>
         <nav>
-          <a href='/' onClick={(event) => { event.preventDefault(); }}><img src="img\Screenshot_20230503-190452.jpg" alt="logo" /></a>
+          <a href='/'><img src="img\Screenshot_20230503-190452.jpg" alt="logo" loading='lazy' /></a>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href='/' onClick={(event) => { event.preventDefault(); scrollIt('project-container'); }} >Projects</a></li>
@@ -199,7 +199,7 @@ function App() {
       </header>
       <main>
         <div className="intro">
-          <div className="img-container"><img src="img/Avatar.png" alt="" />
+          <div className="img-container"><img src="img/Avatar.png" alt="" loading='lazy' />
             <div className="name-arrow">
               <svg width="122" height="118" viewBox="0 0 122 118" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd"
@@ -236,7 +236,7 @@ function App() {
         <div className="work-details">Work Experience</div>
         <div className="up">
           <div key={elements[0].id} id={elements[0].id} ref={elements[0].ref} className="card">
-            <img src="img/icons/Html logo.png" alt="" />
+            <img src="img/icons/Html logo.png" alt="" loading='lazy' />
             <div className="details">
               <h3>HTML5:</h3>
               <p>Proficient in creating the structure and layout of web pages using HTML, ensuring proper content hierarchy and semantic markup for enhanced accessibility and search engine optimization.</p>
@@ -245,7 +245,7 @@ function App() {
           </div>
 
           <div key={elements[1].id} id={elements[1].id} ref={elements[1].ref} className="card">
-            <img src="img/icons/Css logo.png" alt="" />
+            <img src="img/icons/Css logo.png" alt="" loading='lazy' />
             <div className="details">
               <h3>CSS3:</h3>
               <p>Skilled in applying CSS styles and design principles to create visually appealing and responsive websites, leveraging selectors, flexbox, grid, and animations for a captivating user experience.</p>
@@ -255,7 +255,7 @@ function App() {
         </div>
         <div className="dow">
           <div key={elements[2].id} id={elements[2].id} ref={elements[2].ref} className="card">
-            <img src="img/icons/javascript logo.png" alt="" />
+            <img src="img/icons/javascript logo.png" alt="" loading='lazy' />
             <div className="details">
               <h3>JAVASCRIPT:</h3>
               <p>Experienced in JavaScript, enabling dynamic and interactive web functionality, including event handling, DOM manipulation, AJAX, and utilizing libraries and frameworks for efficient development.</p>
@@ -264,7 +264,7 @@ function App() {
           </div>
 
           <div key={elements[3].id} id={elements[3].id} ref={elements[3].ref} className="card">
-            <img src="img/icons/react logo.png" alt="" />
+            <img src="img/icons/react logo.png" alt="" loading='lazy' />
             <div className="details">
               <h3>REACT:</h3>
               <p>Experienced in JavaScript, enabling dynamic and interactive web functionality, including event handling, DOM manipulation, AJAX, and utilizing libraries and frameworks for efficient development.</p>
@@ -287,7 +287,7 @@ function App() {
               <h4>Amazon Clone</h4>
               <div className="pro-detail">
                 <p>I have developed a feature-rich Amazon clone website that incorporates essential functionalities such as a seamless cart option, ad posting capabilities, and user account management using Firebase's robust database and authentication services.</p>
-                <img style={{boxShadow: '-6px -10px 18px 0px #a7a7a7'}} src="img/Amazon-clone.png" alt="" />
+                <img style={{ boxShadow: '-6px -10px 18px 0px #a7a7a7' }} src="img/Amazon-clone.png" alt="" loading='lazy' />
               </div>
             </div>
           </a>
@@ -297,7 +297,7 @@ function App() {
               <h4>Friend Portfolio</h4>
               <div className="pro-detail">
                 <p>I have designed a captivating portfolio showcasing my friend's expertise as a game developer. The portfolio includes a Firebase-integrated database, allowing him to effortlessly upload and showcase his impressive projects to demonstrate his skills and creativity in the gaming industry.</p>
-                <img  style={{boxShadow: '-6px -10px 18px 0px #9400c6'}} src="img/Friend-project.png" alt="" />
+                <img style={{ boxShadow: '-6px -10px 18px 0px #9400c6' }} src="img/Friend-project.png" alt="" loading='lazy' />
               </div>
             </div>
           </a>
@@ -308,7 +308,7 @@ function App() {
               <h4>Tic Tac Toe</h4>
               <div className="pro-detail">
                 <p>I have crafted a dynamic Tic Tac Toe game that provides an engaging experience for two players. With its intuitive interface and smooth gameplay, this project showcases my ability to design and develop interactive games that entertain and challenge players.</p>
-                <img src="img/TicTacToe pic.png" alt="" />
+                <img src="img/TicTacToe pic.png" alt="" loading='lazy' />
               </div>
             </div>
           </a>
@@ -318,21 +318,10 @@ function App() {
               <h4>Clock</h4>
               <div className="pro-detail">
                 <p>I have crafted a visually stunning analogue clock that elegantly displays the current time. Experience the timeless charm of a traditional clock with this captivating and functional design.</p>
-                <img src="img/Clock.png" alt="" />
+                <img src="img/Clock.png" alt="" loading='lazy' />
               </div>
             </div>
           </a>
-          {/* 
-          <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Quadratic-Equations/">
-            <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className="project">
-              <h4>Quadartic Equation</h4>
-              <div className="pro-detail">
-                <p>This was my dream to make an Quadartic Calculator so I gave it a try. It is not full ready
-                  and is in development will be ready soon.</p>
-                <img src="img/Quadratic Equ.png" alt="" />
-              </div>
-            </div>
-          </a> */}
 
         </div>
 
