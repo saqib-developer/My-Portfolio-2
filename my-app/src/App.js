@@ -56,7 +56,7 @@ function App() {
       threshold: 0.3,
     },
     {
-      id: "friend-port",
+      id: "chatty",
       ref: useRef(null),
       initialTransform: "translateX(60%)",
       visibleTransform: "translateX(0%)",
@@ -65,7 +65,7 @@ function App() {
       threshold: 0.3,
     },
     {
-      id: "tictactoe",
+      id: "friend-port",
       ref: useRef(null),
       initialTransform: "translateX(-60%)",
       visibleTransform: "translateX(0%)",
@@ -74,7 +74,25 @@ function App() {
       threshold: 0.3,
     },
     {
+      id: "tictactoe",
+      ref: useRef(null),
+      initialTransform: "translateX(60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
       id: "clock",
+      ref: useRef(null),
+      initialTransform: "translateX(-60%)",
+      visibleTransform: "translateX(0%)",
+      initialOpacity: "0",
+      visibleOpacity: "1",
+      threshold: 0.3,
+    },
+    {
+      id: "calculator",
       ref: useRef(null),
       initialTransform: "translateX(60%)",
       visibleTransform: "translateX(0%)",
@@ -292,8 +310,18 @@ function App() {
             </div>
           </a>
 
-          <a target="_blank" rel="noreferrer" href="https://mtouseef-portfolio.netlify.app/">
+          <a target="_blank" rel="noreferrer" href="https://chatty-saqib.netlify.app/">
             <div key={elements[5].id} id={elements[5].id} ref={elements[5].ref} className="project">
+              <h4>Chatty</h4>
+              <div className="pro-detail">
+                <p>Chatty is a react based web app that allows you to have casual conversations with friends and family or anyone for that matter. Chatty is a great way to stay connected with your loved ones, no matter where they are in the world. It uses firesbase for Authentication, Database and Storage purposes</p>
+                <img style={{ boxShadow: '-6px -10px 18px 0px #00235a' }} src="img/Chatty.png" alt="" loading='lazy' />
+              </div>
+            </div>
+          </a>
+
+          <a target="_blank" rel="noreferrer" href="https://mtouseef-portfolio.netlify.app/">
+            <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className="project">
               <h4>Friend Portfolio</h4>
               <div className="pro-detail">
                 <p>I have designed a captivating portfolio showcasing my friend's expertise as a game developer. The portfolio includes a Firebase-integrated database, allowing him to effortlessly upload and showcase his impressive projects to demonstrate his skills and creativity in the gaming industry.</p>
@@ -304,7 +332,7 @@ function App() {
           <h3>Others Projects</h3>
 
           <a target="_blank" rel="noreferrer" href="https://msntictactoe.netlify.app/">
-            <div key={elements[6].id} id={elements[6].id} ref={elements[6].ref} className='project'>
+            <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className='project'>
               <h4>Tic Tac Toe</h4>
               <div className="pro-detail">
                 <p>I have crafted a dynamic Tic Tac Toe game that provides an engaging experience for two players. With its intuitive interface and smooth gameplay, this project showcases my ability to design and develop interactive games that entertain and challenge players.</p>
@@ -314,11 +342,21 @@ function App() {
           </a>
 
           <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Clock/">
-            <div key={elements[7].id} id={elements[7].id} ref={elements[7].ref} className="project">
+            <div key={elements[8].id} id={elements[8].id} ref={elements[8].ref} className="project">
               <h4>Clock</h4>
               <div className="pro-detail">
                 <p>I have crafted a visually stunning analogue clock that elegantly displays the current time. Experience the timeless charm of a traditional clock with this captivating and functional design.</p>
                 <img src="img/Clock.png" alt="" loading='lazy' />
+              </div>
+            </div>
+          </a>
+
+          <a target="_blank" rel="noreferrer" href="https://saqibsaqib123.github.io/Calculator/">
+            <div key={elements[9].id} id={elements[9].id} ref={elements[9].ref} className="project">
+              <h4>Calculator</h4>
+              <div className="pro-detail">
+                <p>A React-based web app calculator is a simple and easy-to-use calculator that is built with the React JavaScript library. It allows users to perform basic and advanced calculations, such as addition, subtraction, multiplication, division, and more.</p>
+                <img src="img/Calculator.png" alt="" loading='lazy' />
               </div>
             </div>
           </a>
@@ -329,12 +367,14 @@ function App() {
           <span>Contact Me</span>
           <p>If you want to discuss any thing related to web development dont't hesitate to contact me.</p>
           <div className="logos">
-            <a href="https://www.fiverr.com/share/pAR6Eo" target="_blank" rel="noopener noreferrer"><img
-              src="img/icons/fiverr-logo.png" alt="" /></a>
-            <a href="mailto:muhammadsaqib8379@gmail.com" target="_blank" rel="noopener noreferrer"><img
-              src="img/icons/email-logo.png" alt="" /></a>
+            <a href="https://www.fiverr.com/share/pAR6Eo" target="_blank" rel="noopener noreferrer">
+              <img src="img/icons/fiverr-logo.png" alt="" /></a>
+            <a href="mailto:muhammadsaqib8379@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src="img/icons/email-logo.png" alt="" style={{borderRadius: 0}}/></a>
             <a href="https://www.linkedin.com/in/muhammad-saqib-nawaz-868871257/" target="_blank"
-              rel="noopener noreferrer"><img src="img/icons/linkledn-logopng.png" alt="" /></a>
+              rel="noopener noreferrer">
+              <img src="img/icons/linkledn-logopng.png" alt="" />
+            </a>
           </div>
         </div>
       </main>
