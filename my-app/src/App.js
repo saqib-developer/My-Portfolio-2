@@ -425,7 +425,7 @@ function App() {
                 <p>
                   I have developed a feature-rich Amazon clone website that incorporates essential functionalities such as a seamless cart option, ad
                   posting capabilities, and user account management using Firebase's robust database and authentication services.{" "}
-                  <span className="link">Click to View {">"}</span>
+                  <span className="link">Click&nbsp;to&nbsp;View&nbsp;{">"}</span>
                 </p>
                 <img
                   style={{
@@ -446,7 +446,7 @@ function App() {
                 <p>
                   Chatty is a react based web app that allows you to have casual conversations with friends and family or anyone for that matter.
                   Chatty is a great way to stay connected with your loved ones, no matter where they are in the world. It uses firesbase for
-                  Authentication, Database and Storage purposes <span className="link">Click to View {">"}</span>
+                  Authentication, Database and Storage purposes <span className="link">Click&nbsp;to&nbsp;View&nbsp;{">"}</span>
                 </p>
                 <img
                   style={{
@@ -467,7 +467,7 @@ function App() {
                 <p>
                   I have designed a captivating portfolio showcasing my friend's expertise as a game developer. The portfolio includes a
                   Firebase-integrated database, allowing him to effortlessly upload and showcase his impressive projects to demonstrate his skills and
-                  creativity in the gaming industry. <span className="link">Click to View {">"}</span>
+                  creativity in the gaming industry. <span className="link">Click&nbsp;to&nbsp;View&nbsp;{">"}</span>
                 </p>
                 <img style={{ boxShadow: "-6px -6px 13px #9400c680" }} src="img/Friend-project.png" alt="" loading="lazy" />
               </div>
@@ -482,7 +482,7 @@ function App() {
                 <p>
                   I have crafted a dynamic Tic Tac Toe game that provides an engaging experience for two players. With its intuitive interface and
                   smooth gameplay, this project showcases my ability to design and develop interactive games that entertain and challenge players.{" "}
-                  <span className="link">Click to View {">"}</span>
+                  <span className="link">Click&nbsp;to&nbsp;View&nbsp;{">"}</span>
                 </p>
                 <img src="img/TicTacToe pic.png" alt="" loading="lazy" />
               </div>
@@ -495,7 +495,7 @@ function App() {
               <div className="pro-detail">
                 <p>
                   I have crafted a visually stunning analogue clock that elegantly displays the current time. Experience the timeless charm of a
-                  traditional clock with this captivating and functional design. <span className="link">Click to View {">"}</span>
+                  traditional clock with this captivating and functional design. <span className="link">Click&nbsp;to&nbsp;View&nbsp;{">"}</span>
                 </p>
                 <img src="img/Clock.png" alt="" loading="lazy" />
               </div>
@@ -509,7 +509,7 @@ function App() {
                 <p>
                   A React-based web app calculator is a simple and easy-to-use calculator that is built with the React JavaScript library. It allows
                   users to perform basic and advanced calculations, such as addition, subtraction, multiplication, division, and more.{" "}
-                  <span className="link">Click to View {">"}</span>
+                  <span className="link">Click&nbsp;to&nbsp;View&nbsp;{">"}</span>
                 </p>
                 <img src="img/Calculator.png" alt="" loading="lazy" />
               </div>
