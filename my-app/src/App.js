@@ -528,7 +528,7 @@ function App() {
             <a href="mailto:muhammadsaqib8379@gmail.com" target="_blank" rel="noopener noreferrer">
               <img src="img/icons/email-logo.png" alt="" style={{ borderRadius: 0 }} />
             </a>
-            <a href="https://www.linkedin.com/in/muhammad-saqib-nawaz-868871257/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/saqib-web-dev/" target="_blank" rel="noopener noreferrer">
               <img src="img/icons/linkledn-logopng.png" alt="" />
             </a>
           </div>
